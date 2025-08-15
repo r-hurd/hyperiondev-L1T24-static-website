@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #252525;
+  margin: 0;
+  margin: 40px;
+}
+
+main {
+  height: 100%;
+}
+
+/* Grid styles */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 5px 5px;
+}
+
+.grid-item {
+  text-align: center;
+  font-size: 3vh;
+  border: rgb(230, 230, 230) solid 1px;
+  padding: 5px;
+}
+
+.grid-item-blank {
+  background-color: rgba(221, 160, 221, 0);
+  text-align: center;
+  font-size: 3vh;
+  padding: 5px;
+  /*border: red solid 1px;*/
+}
+
+.grid-item-blank-3 {
+  grid-column: 1 / 4;
+  text-align: center;
+  font-size: 3vh;
+  padding: 5px;
+  /*border: red solid 1px;*/
+}
+
+.grid-item-blank-10 {
+  grid-column: 3 / 13;
+  text-align: center;
+  font-size: 3vh;
+  padding: 5px;
+  /*border: red solid 1px;*/
+}
+
+.grid-item-blank-16 {
+  grid-column: 2 / 18;
+  text-align: center;
+  font-size: 3vh;
+  padding: 5px;
+  /*border: red solid 1px;*/
+}
+
+/* Flexbox styles */
+
+.flex-container-column {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-item-padding {
+  padding-top: 3%;
+}
+
+/* Text styles */
+
+.text1 {
+  color: rgb(0, 0, 0);
+  font-size: 0.6vw;
+  text-align: left;
+}
+
+.text2 {
+  color: rgb(0, 0, 0);
+  font-size: 0.4vw;
+  text-align: right;
+}
+
+.text3 {
+  color: rgb(0, 0, 0);
+  font-size: 0.7vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text4 {
+  color: rgb(0, 0, 0);
+  font-size: 0.6vw;
+  text-align: center;
+}
+
+.text5 {
+  color: rgb(0, 0, 0);
+  font-size: 0.4vw;
+  text-align: center;
+}
+
+/* Background colours */
+
+.yellow-bg {
+  background-color: rgb(255, 255, 181);
+}
+
+.orange-bg {
+  background-color: rgb(255, 202, 149);
+}
+
+.pink-bg {
+  background-color: rgb(250, 178, 178);
+}
+
+.lilac-bg {
+  background-color: rgb(222, 198, 255);
+}
+
+.sage-bg {
+  background-color: rgb(186, 223, 176);
+}
+
+.green-bg {
+  background-color: rgb(136, 255, 136);
+}
+
+.blue-bg {
+  background-color: rgb(139, 218, 238);
+}
+
+.aqua-bg {
+  background-color: rgb(173, 255, 255);
+}
+
+.teal-bg {
+  background-color: rgb(198, 255, 202);
+}
+
+/* Image styles */
+.periodic-table-img {
+  display: none;
+}
+
+/* Media queries */
+
+@media (max-width: 1400px) {
+  body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    margin: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid-container {
+    display: none;
+    visibility: collapse;
+  }
+
+  .periodic-table-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
